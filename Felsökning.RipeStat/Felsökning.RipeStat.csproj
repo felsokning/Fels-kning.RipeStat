@@ -22,7 +22,11 @@
     <RepositoryUrl>https://github.com/felsokning/Fels-kning</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
-
+  <ItemGroup>
+    <None Include="docs\README.md" Pack="true" PackagePath="\">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Felsökning" Version="9.0.1" />
   </ItemGroup>
