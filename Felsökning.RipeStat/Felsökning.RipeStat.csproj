@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0;net6.0;net7.0;net8.0;net9.0;</TargetFrameworks>
+    <LangVersion>12.0</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>John Bailey</Authors>
+    <Company>Felsökning</Company>
+    <Description>A library to automate calls to the RIPE STAT Database</Description>
+    <Copyright>Copyright © 2025 Felsökning</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/felsokning/Fels-kning.RipeStat</PackageProjectUrl>
+    <PackageIconUrl />
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageTags>afrinic apnic arin asn iana ip ipv4 ipv6 iprange ip-range lacnic resource ripe ripestat ripe-stat routing registry stat whois</PackageTags>
+    <PackageReleaseNotes>Adding README file for NuPkg Parse in NuGet.</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/felsokning/Fels-kning</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Felsökning" Version="9.0.1" />
+  </ItemGroup>
+
+</Project>
